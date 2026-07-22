@@ -1,12 +1,10 @@
 #include <stdio.h>
  
 int main () { 
-	int x, y; 
-	printf("input two integers :");
-	scanf("%i %i", &x, &y);
-	printf("+ result is %i\n", x + y);
-	printf("- result is %i\n", x - y);
-	printf("* result is %i\n", x * y);
-	printf("/ result is %i\n", x / y);
-	printf("%% result is %i\n", x % y);	
+	int x, a, b; 
+	printf("input the second :");
+	scanf("%i", &x);
+	a=x/60;
+	b=x%60;
+	printf("the time is %i : %i", a, b);
 	}
