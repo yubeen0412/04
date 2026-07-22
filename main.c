@@ -1,19 +1,13 @@
 #include <stdio.h>
  
-int main (int argc, char *argv[]) { 
-	unsigned int x;
-	int b;
-	
-	printf("input a number : ");
-	scanf("%ui", &x);
-	
-	for (b=0; x !=0; x>>=1)
-	{
-		if(x & 1)
-		{
-			b++;
-			}		
-	}
-	
-	printf("The result is : %i\n", b);
+int main ()
+{
+	int x, a, b, c, d; 
+	printf("input the second :");
+	scanf("%i", &x);
+	a=x/3600;
+	b=x%3600;
+	c=b/60;
+	d=b%60;
+	printf("the time %i is %i : %i :%i",x, a, c, d);
 }
