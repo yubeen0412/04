@@ -2,25 +2,13 @@
 
 int main(void)
 {
-    int x, y, res;
+    int x, y, z;
+    printf("input the second");
+    scanf("%d", &x);
 
-    printf("input two intergers:");
-    scanf("%d %d", &x, &y);
+    y = x/60;
+    z = x%60;
 
-
-    res = x + y;
-    printf("%i + %i = %i\n", x, y, res);
-
-    res = x - y;
-    printf("%i - %i = %i\n", x, y, res);
-
-    res = x * y;
-    printf("%i * %i = %i\n", x, y, res);
-
-    res = x / y;
-    printf("%i / %i = %i\n", x, y, res);
-
-    res = x % y;
-    printf("%i %% %i = %i\n", x, y, res);
-
+    printf("the time is %d : %d", y, z);
+    
 }
