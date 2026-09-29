@@ -2,13 +2,12 @@
 
 int main(void)
 {
-    int x, y, z;
-    printf("input the second");
-    scanf("%d", &x);
+    int year;
 
-    y = x/60;
-    z = x%60;
+    printf("input the year : ");
+    scanf("%d", &year);
 
-    printf("the time is %d : %d", y, z);
-    
+    printf("%i\n", (year % 4 == 0 && year % 100 != 0) || year % 400 == 0);
+
+    return 0;
 }
